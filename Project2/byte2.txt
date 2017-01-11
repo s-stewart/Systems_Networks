@@ -1,0 +1,6 @@
+v2.0 raw
+a0 a0 0 20 80 61 21 1
+5*0 bd dd 0 bd 3d 20 21
+20 3d 0 bd dd 0 bd 5*0
+bd 16*0 bd dd 0 bd 3d 20
+21 20 3d 0 bd dd 0 bd

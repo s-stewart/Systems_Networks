@@ -1,0 +1,1 @@
+100. My program if pipelined correctly and implements forwarding without hazards. The only stalls that occur are due to flushing the insructions in the pipeline after a jump or branch

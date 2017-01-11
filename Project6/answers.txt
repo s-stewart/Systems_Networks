@@ -1,0 +1,54 @@
+CS 2200 Summer 2013
+Project 6
+Name:
+GT Number:
+
+Problem 1B
+----------
+
+1 CPU : # of Context Switches: 98
+	Total execution time: 67.6 s
+	Total time spent in READY state: 390.1 s
+
+2 CPU : # of Context Switches: 109
+	Total execution time: 36.3 s
+	Total time spent in READY state: 80.6 s
+
+4 cpu : # of Context Switches: 185
+	Total execution time: 33.5 s
+	Total time spent in READY state: 0.4 s
+
+
+In my simulations, there is not a linear relationship between the number of CPUs and execution time. 
+
+In the case of 1 CPU vs 2 CPU it almost is linear, but not quite. This is because we are able to run 2 threads in parallel and not as many threads are waiting in the ready queue. 
+
+In the 2 CPU vs 4 CPU case, however, doubleing the number of CPUs does not help as much because sometimes the 4 CPU processor is not running at full capacity, ie. waiting on I/O requests.
+
+Problem 2B
+----------
+
+800ms:	# of Context Switches: 136
+	Total execution time: 67.6 s
+	Total time spent in READY state: 228.8 s
+
+600ms:	# of Context Switches: 161
+	Total execution time: 67.6 s
+	Total time spent in READY state: 182.0 s
+
+400ms:	# of Context Switches: 202
+	Total execution time: 67.6 s
+	Total time spent in READY state: 134.7 s
+
+200ms:	# of Context Switches: 362
+	Total execution time: 67.5 s
+	Total time spent in READY state: 71.2 s
+
+In a real OS the shortest time slice possible is not the best choice because the CPU would be context switching all the time rather than doing work.
+
+
+Problem 3B
+----------
+
+For the three algorithms given, static priority will have the shortest total time spent in ready queue if the priority is set to SJHP(shortest job highest priority). This essentially emulates SJF. 
+
